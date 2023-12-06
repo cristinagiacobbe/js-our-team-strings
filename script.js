@@ -1,4 +1,3 @@
-//creare un array di stringhe con i nomi dei membri del team.
 //MILESTONE 0:
 //Creare l’array di stringhe contenente i nomi dei membri del team.
 //MILESTONE 1:
@@ -19,4 +18,20 @@
 //push/remove
 
 const teamList = ["Fabio Pacifici", "Luigi Micco", "Filippo Mangione", "Simone Taccori", "Valeria Marta"]
-console.log(teamList);
+
+const containerElement = document.querySelector(".container")
+//create a single div with class "card"
+//const cardElement = document.createElement("div")
+//cardElement.className = "card"
+//console.log(cardElement);
+//put the single card into container
+//containerElement.append(cardElement)
+//repeat this operation for every element in the array. 
+//I have to insert previous operations into a loop
+
+for (let i = 0; i < teamList.length; i++) {
+    const cardElement = document.createElement("div")
+    cardElement.className = "card"
+     containerElement.append(cardElement)
+}
+
