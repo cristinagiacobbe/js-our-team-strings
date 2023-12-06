@@ -32,6 +32,8 @@ const containerElement = document.querySelector(".container")
 for (let i = 0; i < teamList.length; i++) {
     const cardElement = document.createElement("div")
     cardElement.className = "card"
-     containerElement.append(cardElement)
+    //insert element list into every card
+    cardElement.innerText = teamList[i]
+    containerElement.append(cardElement)
 }
 
