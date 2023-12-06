@@ -17,3 +17,6 @@
 //document.innerText
 //click event
 //push/remove
+
+const teamList = ["Fabio Pacifici", "Luigi Micco", "Filippo Mangione", "Simone Taccori", "Valeria Marta"]
+console.log(teamList);
