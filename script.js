@@ -33,14 +33,12 @@ for (let i = 0; i < teamList.length; i++) {
     const cardElement = document.createElement("div")
     cardElement.className = "card"
     //insert element list into every card
-    cardElement.innerText = teamList[i]    
+    cardElement.innerText = teamList[i]
     containerElement.append(cardElement)
-    console.log(cardElement);
-    cardElement.addEventListener("click", function(){
-        cardElement.classList.add("bigger")
-        console.log(cardElement);
+    console.log(cardElement);    
+    cardElement.addEventListener("click", function () {
+        cardElement.classList.toggle("evidence")
     })
-    
 }
 
 
