@@ -35,13 +35,35 @@ for (let i = 0; i < teamList.length; i++) {
     //insert element list into every card
     cardElement.innerText = teamList[i]
     containerElement.append(cardElement)
-    console.log(cardElement);    
+    //console.log(cardElement);    
     cardElement.addEventListener("click", function () {
         cardElement.classList.toggle("evidence")
     })
 }
 
+const memberSubmitEl = document.getElementById("memberSubmit")
+const newMemberEl = document.getElementById("newMember")
 
+
+memberSubmitEl.addEventListener("submit", function(e) {
+    e.preventDefault()
+    const newMember = newMemberEl.value
+    console.log(newMember);
+    AddMember(newMember)
+}
+
+)
+
+function AddMember(newMember) {
+    const cardElement = document.createElement("div")
+    cardElement.className = "card"
+    cardElement.innerText = newMember
+    containerElement.append(cardElement)
+    cardElement.addEventListener("click", function () {
+        cardElement.classList.toggle("evidence")
+})
+return newMember
+}
 
 
 

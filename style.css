@@ -15,8 +15,13 @@
     text-align: center;
     justify-content: center;
     margin-right: 20px;
+    margin-bottom: 30px;
 }
 .evidence{
     transform: scale(1.2);
     background-color: rgb(139, 73, 73);
+}
+form{
+    margin-top: 30px;
+    text-align: center;
 }
